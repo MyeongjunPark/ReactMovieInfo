@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './routes/Home';
 import Detail from './routes/Detail';
-import LoadingPage from './components/LoadingPage';
+
 function App() {
   return (
   <Router>
@@ -9,7 +9,7 @@ function App() {
       <Route basename={process.env.PUBLIC_URL} path='/movie/:id' element={<Detail />} />
     </Routes>
     <Routes>
-      <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}/>
+      <Route /*path={`${process.env.PUBLIC_URL}/`}*/ path='/' element={<Home />}/>
     </Routes>
   </Router>
   )

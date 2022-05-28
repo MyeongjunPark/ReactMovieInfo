@@ -30,7 +30,10 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "transparent", left:"30px"}}
+      style={{ ...style, display: "block",
+       background: "transparent", 
+       left:"30px",
+      zIndex:'999'}}
       onClick={onClick}
     />
   );
@@ -58,7 +61,7 @@ function Home() {
     slidesToShow: 5,
     autoplay:true,
     pauseOnHover:true,
-    //arrows:true,
+    arrows:true,
     prevArrow:<SamplePrevArrow/>,
     nextArrow:<SampleNextArrow/>,
     responsive: [
