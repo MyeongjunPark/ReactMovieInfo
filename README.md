@@ -1,2 +1,0 @@
-# ReactMovieInfo
-React Movie Infomation
