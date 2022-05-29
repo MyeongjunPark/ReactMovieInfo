@@ -46,6 +46,7 @@ function Home() {
     const response = await fetch(
       `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year`)
       const json = await response.json();
+      console.log(json.data.movies)
       setMovies(json.data.movies)
       setLoading(false)
   }
@@ -93,7 +94,8 @@ function Home() {
         breakpoint: 460,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false,
         }
       }
     ]

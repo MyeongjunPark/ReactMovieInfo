@@ -5,7 +5,7 @@
     height: 100vh;
     position: relative;
     margin: 0 auto;
-    background-color: rgb(38, 38, 38)
+    background-color: rgb(38, 38, 38);
 }
 #home-title{
     width: 100vw;
@@ -28,5 +28,43 @@
     position: absolute;
     top: 240px;
     overflow: hidden;
+}
+
+@media all and (max-width:767px){
     
+#home{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(38, 38, 38);
+}
+#home-body{
+    width: 100vw;
+    height: 100vw;
+    text-align: center;
+}
+#home-title{
+    width: 100vw;
+    height: 400px;
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 2px 2px black;
+    background-image: url('../img/bgimg.jpeg');
+    background-size: contain;
+    opacity: 1;
+}
+
+#home-movie{
+    width: 100vw;
+    height: 400px;
+    position: absolute;
+    top: 250px;
+    overflow: hidden;
+    left: 18%;
+}
 }
