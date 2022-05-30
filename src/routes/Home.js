@@ -107,7 +107,7 @@ function Home() {
       (
       <div id='home-body'>
         <div id="home-title">
-          <h1>Movie Infomation</h1>
+          <h1>Movie Information</h1>
         </div>
         <div id='home-movie'>
         <Slider {...settings}>
